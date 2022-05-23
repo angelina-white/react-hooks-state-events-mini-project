@@ -7,13 +7,13 @@ function CategoryFilter({Categories, clickButton, isValue}) {
        if (item === isValue)
        {
          return (
-           <button value={item} className="selected" onClick={clickButton}>{item}</button>
+           <button value={item} key={item} className="selected" onClick={clickButton}>{item}</button>
          )
        }
        else
        {
          return (
-           <button value={item} className="" onClick={clickButton}>{item}</button>
+           <button value={item} key={item} className="" onClick={clickButton}>{item}</button>
          )
        }
      })

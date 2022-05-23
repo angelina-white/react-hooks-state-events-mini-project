@@ -2,7 +2,6 @@ import React from "react";
 import Task from "./Task"
 
 function TaskList({Tasks, isValue}) {
-  console.log(isValue)
 
   const newTaskList = Tasks.map((item) =>
   {
@@ -19,8 +18,6 @@ function TaskList({Tasks, isValue}) {
       )
     }
   })
-
-  console.log(newTaskList)
 
   return (
     <div className="tasks">
